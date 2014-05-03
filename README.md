@@ -1,10 +1,5 @@
-# client-template
+# Pet Sitting
 
-Serves as a template for client JavaScript applications.
-
-It uses:
-* Jade
-* Less
-* Grunt
-* JSHint
-* Node.js
+Create a character with the drop down boxes. Each one needs a different name.
+You can feed it, give it sleep and take it out to play.
+If its health goes down to 0, it dies.

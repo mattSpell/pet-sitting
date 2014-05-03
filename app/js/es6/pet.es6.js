@@ -30,7 +30,7 @@ class Pet{
   }
 
   play(){
-    this.mood += _.random(0, 1);
+    this.mood += _.random(0, 3);
     this.full -= _.random(1, 4);
     this.health -= _.random(1, 4);
     if(this.mood >= 100){this.mood = 100;}
@@ -49,9 +49,9 @@ class Pet{
                         <div class=image style='background-image:url("${this.speciesImg}")'></div>
                         <div class=nameSpec><span>Name: ${this.name}</span></div>
                         <div class=ageGen><span>Age: ${this.age} | </span><span>Gender: ${this.gender}</span></div>
-                        <div class='meter'><span class='health' style='width:${this.health}%'>Health</span></div>
-                        <div class='meter'><span class='mood' style='width:${this.mood}%'><span class='words'>Mood</span></span></div>
-                        <div class='meter'><span class='full' style='width:${this.full}%'>Belly</span></div>
+                        <div class='meter'><div class='words'>Health</div><span class='health' style='width:${this.health}%'></span></div>
+                        <div class='meter'><div class='words'>Mood</div><span class='mood' style='width:${this.mood}%'></span></div>
+                        <div class='meter'><div class='words'>Belly</div><span class='full' style='width:${this.full}%'></span></div>
                         <button class='eat'>Eat</button>
                         <button class='sleep'>Sleep</button>
                         <button class='play'>Play</button>
